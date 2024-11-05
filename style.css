@@ -1,3 +1,169 @@
-body{
-            font-size: 16px;
-        }
+/* -------------------- IMPORTED FONTS -------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
+
+/*-------------------- CSS REST ---------------------------------------------------*/
+/*
+*  html5resetcss
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+/* -------------------- ROOT VARIABLES --------------------------------------- */
+:root{
+    --green:  #06A816;
+    --orange: #e75d02;
+    --black: #000000;
+    --white: #ffffff;
+    --black-transparent: rgba(0, 0, 0, 0.5);
+}
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px var(--black);
+    padding: 10px
+
+}
+h2{
+    font-size: 1.75em;
+    padding: 10px;
+}
+h3{
+    font-size: 1.25em;
+    text-align: center;
+}
+header{
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+}
+
+nav{
+    text-align: center;
+    padding: 0;
+    position: relative;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 0px;
+    width: 50%;
+    
+}
+nav ul li a{
+    display: block;
+    padding: 10px 20px;
+    background-color: var(--orange);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    width:100%;
+    box-sizing: border-box;
+}
+.top-button {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    background-color: var(--orange); 
+    color: var(--white); 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    z-index: 1000; 
+    text-decoration: none;
+    width:20px;
+    height:20px;
+    text-align: center;
+    line-height: 20px;
+}
+body {
+    font-family: 'Habibi', serif;
+}
+
+h1,h2,h3 {
+    font-family: 'Irish Grover', cursive;
+}
+figure {
+    position: relative;
+    display: block;
+    padding: 40px; 
+    margin: 0 auto; 
+    box-sizing: border-box; 
+    
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    background-color: var(--black-transparent); 
+    
+    
+}
+p {
+    padding:10px;
+    font-size: 1.05em;
+    line-height: 1.5;
+}
+footer{
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+}
+footer section{
+    margin-top: 30px;
+}
+footer ul {
+    list-style-type: none;
+    font-size: 0.8em;
+    line-height: 1.25;
+}
+footer section h3{
+    margin-bottom: 15px;
+}
+address{
+    font-size: 0.8em;
+    line-height:0.3;
+    margin:0;
+}
+address p{
+    margin: 0;
+    padding: 0px 0;
+}
+address a{
+    text-decoration: none;
+    color: var(--white);
+}
+small{
+    color: var(--green);
+    display: block;
+    width: 100%;
+    text-align:center;
+    background-color: var(--white);
+    padding: 10px 0;
+    margin: 0;
+}
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+/*-------------------- MEDIA QUERY (large) ------------------------------------*/
+/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
