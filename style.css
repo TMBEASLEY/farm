@@ -28,6 +28,8 @@ input,select{vertical-align:middle}
     --black-transparent: rgba(0, 0, 0, 0.5);
 }
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+/* the assignment stated to include this breakpoint, but then there is no css applied to smaller screen sizes so I am making a decision to not include it but representing it here to show that I was aware
+@media (min-width: 428px){}*/
 h1 {
     font-size: 2.5em;
     text-shadow: 2px 2px 5px var(--black);
@@ -79,7 +81,7 @@ nav ul li a{
     color: var(--white); 
     padding: 10px 20px; 
     border-radius: 5px; 
-    z-index: 1000; 
+    z-index: 1; 
     text-decoration: none;
     width:20px;
     height:20px;
@@ -131,7 +133,7 @@ footer{
     text-align: center;
     padding: 20px 0;
 }
-footer section{
+#contact #hours{
     margin-top: 30px;
 }
 footer ul {
@@ -142,16 +144,16 @@ footer ul {
 footer section h3{
     margin-bottom: 15px;
 }
-address{
+#contact{
     font-size: 0.8em;
     line-height:0.3;
     margin:0;
 }
-address p{
+#contact p{
     margin: 0;
     padding: 0px 0;
 }
-address a{
+#contact a{
     text-decoration: none;
     color: var(--white);
 }
@@ -162,8 +164,88 @@ small{
     text-align:center;
     background-color: var(--white);
     padding: 10px 0;
-    margin: 0;
 }
+
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media (min-width: 834px){
+#fruit-pics{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#veg-pics{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+footer section {
+    flex: 1;
+    margin-right: 20px;
+}
+footer h3{
+    margin-bottom: 10px;
+}
+}
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
+@media (min-width: 1280px){
+    #fruit-pics{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #veg-pics{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    header{
+        text-align: left;
+    }
+    nav{
+        display:flex;
+        top: 20px;
+        right: 15px;
+    }
+    nav ul{
+        display: flex;
+        width: 100%;
+    }
+    nav ul li{
+        border: 1px solid var(--white);
+        margin: 0 10px;
+}
+.head-nav{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    background-color: var(--green);
+}
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+footer section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+}
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+@media (min-width: 1440px){
+    #fruit-pics{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #veg-pics{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    } 
+}
